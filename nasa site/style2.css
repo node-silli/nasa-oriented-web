@@ -1,0 +1,233 @@
+body {
+  background-image: url(./pexels-francesco-ungaro-998641.jpg);
+  width: 99vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  position: fixed;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: all;
+  transition-duration: 0.5s;
+}
+a:hover {
+  font-family: "Balsamiq Sans", cursive;
+  color: black;
+  font-weight: 700;
+  text-shadow: 10px 10px 25px rgb(81, 67, 21), -10px 10px 25px rgb(81, 67, 21),
+    -10px -10px 25px rgb(81, 67, 21), 10px -10px 25px rgb(81, 67, 21);
+}
+.navbar {
+  position: absolute;
+  top: 40px;
+  left: 26%;
+  font-size: 23px;
+}
+#nasalogo {
+  position: absolute;
+  width: 80px;
+  top: 20px;
+  left: 10px;
+}
+#rocket {
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+#launch1 h2,
+#launch2 h2,
+#launch3 h2 {
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#launches {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 99vw;
+  height: 650px;
+}
+.details {
+  color: rgb(228, 97, 64);
+  width: 300px;
+  height: 200px;
+}
+#launch1,
+#launch2,
+#launch3 {
+  border: 2px solid whitesmoke;
+  border-radius: 11px;
+  border-style: double;
+  padding: 10px;
+}
+#pio {
+  width: 150px;
+  position: relative;
+  top: 3px;
+  left: 70px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+#voy {
+  width: 250px;
+  position: relative;
+  top: 3px;
+  left: 30px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+#spi {
+  width: 255px;
+  position: relative;
+  top: 3px;
+  left: 23px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+h1 {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#whatlines {
+  color: aqua;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+#footerdiv {
+  display: flex;
+  justify-content: center;
+}
+#linesdiv {
+  width: 1000px;
+  height: 340px;
+  line-height: 40px;
+}
+#worksline {
+  color: white;
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+#workingpara {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 2px solid gray;
+  border-radius: 8px;
+  width: 1000px;
+  text-align: center;
+  line-height: 25px;
+}
+#lastflex {
+  display: flex;
+  justify-content: center;
+}
+#links {
+  display: flex;
+  justify-content: center;
+}
+#forspace {
+  padding: 50px;
+}
+.down {
+  font-size: 22px;
+
+  border-radius: 8px;
+  text-shadow: none;
+}
+
+/* --------------------adding css of form----------------------------------- */
+/* #form {
+  outline: none;
+  text-align: center;
+}
+#name {
+  width: 100%;
+}
+input[type="text"] {
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+input[type="email"] {
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+.messege {
+  margin-top: 19px;
+  height: 90px;
+  text-align: top;
+  padding-top: 1px;
+}
+#button {
+  width: 170px;
+  height: 55px;
+  background-color: black;
+  color: white;
+  border-radius: 24px;
+  margin-top: 21px;
+  outline: none;
+}
+#button:hover {
+  background-color: #e84118;
+  color: black;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.5s;
+}
+.change {
+  margin-top: 23px;
+}
+h2:hover {
+  text-shadow: 3px -4px 2px black;
+  transition: 0.9s;
+}
+input[type="text"]:hover {
+  box-shadow: 2px 4px 1px black;
+  transition: 0.5s;
+}
+input[type="email"]:hover {
+  box-shadow: 2px 4px 1px black;
+  transition: 0.5s;
+}
+#textarea {
+  background-color: black;
+  width: 41%;
+  height: 84px;
+  border-radius: 15px;
+  color: white;
+  outline: none;
+}
+#textarea:hover {
+  box-shadow: 2px 4px 1px black;
+  transition: 0.5s;
+} */
